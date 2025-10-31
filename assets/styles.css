@@ -505,52 +505,217 @@ body {
 
 
 @media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
   .header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    width: 100vw;
+    width: 100%;
     margin: 0;
-    background: linear-gradient(135deg, #1a5f3a 0%, #2d86598e 100%) !important;
-    backdrop-filter: blur(6px);
+    padding: 10px 0;
+    background: linear-gradient(135deg, #1a5f3a 0%, #2d8659 100%) !important;
+  }
+
+  .brand {
+    position: relative;
+    padding: 5px 10px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .left-logos,
+  .right-logos {
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .left-logos img,
+  .right-logos img {
+    height: 50px;
+    width: auto;
+  }
+
+  .logo-container {
+    margin-bottom: 10px;
+  }
+
+  .logo {
+    font-size: 1.8em;
+  }
+
+  .tagline {
+    font-size: 0.8em;
   }
 
   .top-nav {
     display: flex;
     flex-wrap: nowrap;
-    justify-content: center;
+    justify-content: flex-start;
     overflow-x: auto;
-    gap: 20px;
-    padding: 0 10px;
+    gap: 10px;
+    padding: 10px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .top-nav::-webkit-scrollbar {
+    display: none;
   }
 
   .top-nav a {
     white-space: nowrap;
     flex: 0 0 auto;
+    padding: 8px 16px;
+    font-size: 0.9em;
+  }
+
+  .main-content {
+    padding: 20px 15px;
   }
 
   .hero-section {
     text-align: center;
-    padding: 20px;
+    padding: 30px 20px;
+    margin-bottom: 20px;
   }
 
+  .hero-section h1 {
+    font-size: 2em;
+  }
+
+  .hero-text,
   .hero-section p {
-    font-size: 16px;
+    font-size: 1em;
     line-height: 1.6;
     margin-bottom: 20px;
   }
 
-  .hero-section button {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 22px;
-    border-radius: 8px;
-    margin-left: auto;
-    margin-right: auto;
+  .cta-buttons {
+    flex-direction: column;
+    gap: 15px;
   }
 
-  .brand {
-    position: relative;
+  .btn {
+    width: 100%;
+    padding: 12px 30px;
+    font-size: 1em;
+  }
+
+  .destination-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .destination-card {
+    margin-bottom: 15px;
+  }
+
+  .card-image {
+    height: 180px;
+  }
+
+  .info-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .page-header h1 {
+    font-size: 1.8em;
+  }
+
+  .content-section {
+    padding: 25px 20px;
+  }
+
+  .content-section h2 {
+    font-size: 1.6em;
+  }
+
+  .content-section h3 {
+    font-size: 1.3em;
+  }
+
+  .landmark-image {
+    height: 200px;
+  }
+
+  .form-container {
+    padding: 25px 20px;
+  }
+
+  .form-container h1 {
+    font-size: 1.8em;
+  }
+
+  .bottom-nav {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .bottom-nav a {
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  .footer-section {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 1.5em;
+  }
+
+  .tagline {
+    font-size: 0.75em;
+  }
+
+  .hero-section h1 {
+    font-size: 1.6em;
+  }
+
+  .hero-text {
+    font-size: 0.95em;
+  }
+
+  .page-header h1 {
+    font-size: 1.5em;
+  }
+
+  .content-section h2 {
+    font-size: 1.4em;
+  }
+
+  .top-nav a {
     padding: 8px 12px;
+    font-size: 0.85em;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 0.95em;
+  }
+
+  .left-logos img,
+  .right-logos img {
+    height: 40px;
   }
 }
