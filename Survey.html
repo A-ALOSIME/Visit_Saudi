@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+
+   <!-- css file-->
+    <link rel="stylesheet" href="/assets/styles.css">
+
+    <!-- css libry-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+</head>
+<body>
+      <!-- Header  and Top Navigation -->
+    <header class="header">
+        <div class="brand">
+        <div class="left-logos">
+        <img src="/assets/1.png" width="180" height="auto" alt="2030 Vision"> 
+        <img src="/assets/2.png" width="180" height="auto" alt="Ministry of Tourism">
+         </div>
+
+        <div class="right-logos">
+         <img src="/assets/3.png" width="180" height="auto" alt="Saudi Tourism Authority">
+         <img src="/assets/4.png" width="180" height="auto" alt="Saudi Welcome to Arabia">
+        </div>
+        </div>
+        <div class="logo-container">
+            <div class="logo">Visit Saudi</div>
+            <p class="tagline">Discover the Heart of Arabia</p>
+        </div>
+        <nav class="top-nav">
+            <a href="index.html">Home</a>
+            <a href="diriyah.html">Diriyah</a>
+            <a href="alula.html">AlUla</a>
+            <a href="plan-trip.html">Plan Your Trip</a>
+            <a href="signup.html">Sign Up</a>
+            <a href="signin.html">Sign In</a>
+            
+        </nav>
+        
+        
+    </header>
+            <section class="content-section" style="margin-top: 40px;">
+            <h2>📊 Tourism Survey</h2>
+            <p style="text-align: center; color: #666; margin-bottom: 30px;">Help us improve Saudi tourism by sharing your thoughts and experiences</p>
+            
+            <form action="">
+                <div class="form-group">
+                    <label for="visited">Have you visited Saudi Arabia before?</label>
+                    <select id="visited" name="visited" required>
+                        <option value="">Please select</option>
+                        <option value="yes">Yes, I have visited</option>
+                        <option value="no">No, but I plan to visit</option>
+                        <option value="resident">I am a resident</option>
+                        <option value="not-planning">Not planning to visit</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="interest">Which destinations interest you most?</label>
+                    <select id="interest" name="interest" required>
+                        <option value="">Please select</option>
+                        <option value="diriyah">Diriyah - Historical Heritage</option>
+                        <option value="alula">AlUla - Ancient Wonders</option>
+                        <option value="riyadh">Riyadh Season - Modern Entertainment</option>
+                        <option value="jeddah">Jeddah - Coastal Experience</option>
+                        <option value="makkah">Makkah & Madinah - Religious Tourism</option>
+                        <option value="abha">Abha - Mountain Escapes</option>
+                        <option value="all">All of the above</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="travel-type">What type of tourism appeals to you?</label>
+                    <select id="travel-type" name="travel-type" required>
+                        <option value="">Please select</option>
+                        <option value="cultural">Cultural & Heritage</option>
+                        <option value="adventure">Adventure & Nature</option>
+                        <option value="entertainment">Entertainment & Events</option>
+                        <option value="religious">Religious Tourism</option>
+                        <option value="business">Business & Conferences</option>
+                        <option value="family">Family & Recreation</option>
+                        <option value="luxury">Luxury & Wellness</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="awareness">How did you learn about Saudi tourist destinations?</label>
+                    <select id="awareness" name="awareness" required>
+                        <option value="">Please select</option>
+                        <option value="social-media">Social Media</option>
+                        <option value="website">Official Tourism Websites</option>
+                        <option value="friends">Friends & Family</option>
+                        <option value="news">News & Media</option>
+                        <option value="school">School/University</option>
+                        <option value="travel-agency">Travel Agency</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="information">What information would be most helpful for planning your visit?</label>
+                    <select id="information" name="information" required>
+                        <option value="">Please select</option>
+                        <option value="visa">Visa Requirements & Process</option>
+                        <option value="hotels">Hotel & Accommodation Options</option>
+                        <option value="transportation">Transportation & Getting Around</option>
+                        <option value="costs">Cost & Budget Information</option>
+                        <option value="attractions">Detailed Attraction Information</option>
+                        <option value="culture">Cultural Guidelines & Tips</option>
+                        <option value="itineraries">Sample Itineraries</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="duration">How long would you like to stay in Saudi Arabia?</label>
+                    <select id="duration" name="duration" required>
+                        <option value="">Please select</option>
+                        <option value="1-3">1-3 days</option>
+                        <option value="4-7">4-7 days</option>
+                        <option value="8-14">1-2 weeks</option>
+                        <option value="15-30">2-4 weeks</option>
+                        <option value="30+">More than a month</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="season">Which season would you prefer to visit?</label>
+                    <select id="season" name="season" required>
+                        <option value="">Please select</option>
+                        <option value="winter">Winter (November - February)</option>
+                        <option value="spring">Spring (March - May)</option>
+                        <option value="summer">Summer (June - August)</option>
+                        <option value="fall">Fall (September - October)</option>
+                        <option value="anytime">Anytime</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="improvement">What would improve your tourism experience in Saudi Arabia?</label>
+                    <select id="improvement" name="improvement" required>
+                        <option value="">Please select</option>
+                        <option value="more-info">More online information</option>
+                        <option value="easier-visa">Easier visa process</option>
+                        <option value="better-transport">Better transportation options</option>
+                        <option value="more-hotels">More accommodation choices</option>
+                        <option value="english-support">Better English language support</option>
+                        <option value="guided-tours">More guided tours</option>
+                        <option value="mobile-apps">Better mobile apps</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="rating">How would you rate Saudi Arabia as a tourist destination?</label>
+                    <select id="rating" name="rating" required>
+                        <option value="">Please select</option>
+                        <option value="5">Excellent - Highly recommend</option>
+                        <option value="4">Very Good - Would recommend</option>
+                        <option value="3">Good - Worth visiting</option>
+                        <option value="2">Fair - Some improvements needed</option>
+                        <option value="1">Poor - Needs major improvements</option>
+                        <option value="0">Haven't visited yet</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="comments">Additional Comments or Suggestions</label>
+                    <textarea id="comments" name="comments" rows="4" style="width: 100%; padding: 12px; border: 2px solid #ddd; border-radius: 8px; font-size: 1em; font-family: inherit; resize: vertical;" placeholder="Share your thoughts, experiences, or suggestions..."></textarea>
+                </div>
+
+                <button type="submit" class="form-button">Submit Survey</button>
+            </form>
+        </section>
+
+        <section class="content-section">
+            <h2>Why Your Feedback Matters</h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h4>📈 Service Improvement</h4>
+                    <p>Your responses help tourism authorities enhance services and facilities across the Kingdom.</p>
+                </div>
+                <div class="info-card">
+                    <h4>🎯 Better Experiences</h4>
+                    <p>Feedback shapes future tourism initiatives and helps create better visitor experiences.</p>
+                </div>
+                <div class="info-card">
+                    <h4>🗺️ New Destinations</h4>
+                    <p>Your interests guide the development of new tourist attractions and destinations.</p>
+                </div>
+                <div class="info-card">
+                    <h4>🌍 Vision 2030</h4>
+                    <p>Contribute to Saudi Arabia's transformation into a world-class tourism destination.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bottom Navigation Bar -->
+    <div class="bottom-nav">
+        <a href="diriyah.html">Diriyah Heritage</a>
+        <a href="alula.html">AlUla Wonders</a>
+        <a href="index.html">Riyadh Season</a>
+    </div>
+
+        <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <div class="social-icons">
+                <a href="https://wa.me/966920000890" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.facebook.com/VisitSaudi" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/visitsaudi" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://x.com/VisitSaudi" target="_blank" aria-label="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+                <a href="https://www.youtube.com/@visitsaudi" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.linkedin.com/showcase/visitsaudi" target="_blank" aria-label="linkedin"><i class="fab fa-linkedin"></i></a>
+               </div>
+                </div>
+                <div class="footer-section">
+                <h3>Quick Links</h3>
+                <p><a href="welcome.html">About Us</a></p>
+                <p><a href="plan-trip.html">Travel Guide</a></p>
+                <p><a href="signin.html">Tourism Survey</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Visit Saudia - Smart Tourism Initiative | Aligned with Vision 2030</p>
+        </div>
+    </footer>
+</body>
+</html>

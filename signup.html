@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Visit Saudia</title>
+
+   <!-- css file-->
+    <link rel="stylesheet" href="/assets/styles.css">
+
+    <!-- css libry-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+</head>
+<body>
+     <!-- Header  and Top Navigation -->
+    <header class="header">
+        <div class="brand">
+        <div class="left-logos">
+        <img src="/assets/1.png" width="180" height="auto" alt="2030 Vision"> 
+        <img src="/assets/2.png" width="180" height="auto" alt="Ministry of Tourism">
+         </div>
+
+        <div class="right-logos">
+         <img src="/assets/3.png" width="180" height="auto" alt="Saudi Tourism Authority">
+         <img src="/assets/4.png" width="180" height="auto" alt="Saudi Welcome to Arabia">
+        </div>
+        </div>
+        <div class="logo-container">
+            <div class="logo">Visit Saudi</div>
+            <p class="tagline">Discover the Heart of Arabia</p>
+        </div>
+        <nav class="top-nav">
+            <a href="index.html">Home</a>
+            <a href="diriyah.html">Diriyah</a>
+            <a href="alula.html">AlUla</a>
+            <a href="plan-trip.html">Plan Your Trip</a>
+            <a href="signup.html">Sign Up</a>
+            <a href="signin.html">Sign In</a>
+            
+        </nav>
+        
+        
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="form-container">
+            <h1>Sign Up for Visit Saudia</h1>
+            <p style="text-align: center; color: #666; margin-bottom: 30px;">Join our community to access personalized content and tourism resources</p>
+            
+            <form action="signin.html" method="get">
+                <div class="form-group">
+                    <label for="fullname">Full Name *</label>
+                    <input type="text" id="fullname" name="fullname" required placeholder="Enter your full name">
+                </div>
+
+                <div class="form-group">
+                    <label for="dob">Date of Birth *</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="semester">Current Semester *</label>
+                    <select id="semester" name="semester" required>
+                        <option value="">Select Semester</option>
+                        <option value="1">Semester 1</option>
+                        <option value="2">Semester 2</option>
+                        <option value="3">Semester 3</option>
+                        <option value="4">Semester 4</option>
+                        <option value="5">Semester 5</option>
+                        <option value="6">Semester 6</option>
+                        <option value="7">Semester 7</option>
+                        <option value="8">Semester 8</option>
+                        <option value="graduate">Graduate</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="college">College *</label>
+                    <select id="college" name="college" required>
+                        <option value="">Select College</option>
+                        <option value="ccis">College of Computer and Information Sciences</option>
+                        <option value="engineering">College of Engineering</option>
+                        <option value="business">College of Business Administration</option>
+                        <option value="medicine">College of Medicine</option>
+                        <option value="science">College of Science</option>
+                        <option value="arts">College of Arts</option>
+                        <option value="law">College of Law</option>
+                        <option value="education">College of Education</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="city">Home City *</label>
+                    <input type="text" id="city" name="city" required placeholder="Enter your city">
+                </div>
+
+                <div class="form-group">
+                    <label for="username">Username *</label>
+                    <input type="text" id="username" name="username" required placeholder="Choose a username">
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password *</label>
+                    <input type="password" id="password" name="password" required placeholder="Create a secure password">
+                </div>
+
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password *</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required placeholder="Re-enter your password">
+                </div>
+
+                <div class="form-group" style="margin-bottom: 30px;">
+                    <label style="display: flex; align-items: center; gap: 10px; cursor: pointer;">
+                        <input type="checkbox" required style="width: auto; cursor: pointer;">
+                        <span>I agree to receive updates about Saudi tourism and events</span>
+                    </label>
+                </div>
+
+                <button type="submit" class="form-button">Create Account</button>
+
+                <p style="text-align: center; margin-top: 20px; color: #666;">
+                    Already have an account? <a href="signin.html" style="color: #1a5f3a; text-decoration: none; font-weight: bold;">Sign In</a>
+                </p>
+            </form>
+        </div>
+
+        <section class="content-section" style="margin-top: 40px;">
+            <h2>Benefits of Creating an Account</h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h4>🎯 Personalized Content</h4>
+                    <p>Get recommendations based on your interests and travel preferences.</p>
+                </div>
+                <div class="info-card">
+                    <h4>📬 Stay Updated</h4>
+                    <p>Receive notifications about new attractions, events, and special offers.</p>
+                </div>
+                <div class="info-card">
+                    <h4>💾 Save Favorites</h4>
+                    <p>Bookmark destinations and create custom itineraries for your visits.</p>
+                </div>
+                <div class="info-card">
+                    <h4>📊 Contribute Feedback</h4>
+                    <p>Participate in surveys to help improve tourism services in Saudi Arabia.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+   <!-- Bottom Navigation Bar -->
+    <div class="bottom-nav">
+        <a href="diriyah.html">Diriyah Heritage</a>
+        <a href="alula.html">AlUla Wonders</a>
+        <a href="index.html">Riyadh Season</a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <div class="social-icons">
+                <a href="https://wa.me/966920000890" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.facebook.com/VisitSaudi" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/visitsaudi" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://x.com/VisitSaudi" target="_blank" aria-label="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+                <a href="https://www.youtube.com/@visitsaudi" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.linkedin.com/showcase/visitsaudi" target="_blank" aria-label="linkedin"><i class="fab fa-linkedin"></i></a>
+               </div>
+                </div>
+                <div class="footer-section">
+                <h3>Quick Links</h3>
+                <p><a href="welcome.html">About Us</a></p>
+                <p><a href="plan-trip.html">Travel Guide</a></p>
+                <p><a href="signin.html">Tourism Survey</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Visit Saudia - Smart Tourism Initiative | Aligned with Vision 2030</p>
+        </div>
+    </footer>
+</body>
+</html>
