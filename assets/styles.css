@@ -204,16 +204,16 @@ body {
 
 .diriyah-img {
     
-    background-image: url(./assets/Diriyah.jpg);
+    background-image: url(Diriyah.jpg);
 }
 
 .alula-img {
     
-    background-image: url(./assets/AlUla.jpg);
+    background-image: url(AlUla.jpg);
 }
 
 .riyadh-img {
-    background-image: url(./assets/RiyadhSeason.png);
+    background-image: url(RiyadhSeason.png);
     background-size: contain;
 }
 
