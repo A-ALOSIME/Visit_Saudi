@@ -504,21 +504,15 @@ body {
 }
 
 
-@media (max-width: 992px) {
-  .brand { display: none !important; }
-
-  .header { 
-    background: #1a5f3a !important;
+@media (max-width: 768px) {
+  .header {
     position: sticky;
     top: 0;
     z-index: 1000;
   }
 
-  body { 
-    padding-top: 8px !important;
-    min-height: 100dvh;
+  .brand {
+    position: relative;
+    padding: 8px 12px;
   }
-
-  .top-nav { gap: 6px; }
-  .top-nav a { padding: 8px 10px; font-size: 14px; }
 }
