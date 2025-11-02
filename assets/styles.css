@@ -654,6 +654,8 @@ body {
   }
 }
 
+
+
 @media (max-width: 480px) {
   .top-nav {
     padding: 6px 8px;
@@ -684,4 +686,4 @@ body {
     padding: 10px 20px;
     font-size: 0.95em;
   }
-}
+    }
