@@ -13,7 +13,7 @@
     <!--added imam logo as favicon-->
     <link rel="icon" type="image/png" href="assets/imam.png"> 
     
-</head>
+   </head>
 <body>
      <!-- Header  and Top Navigation -->
     <header class="header">
@@ -49,15 +49,16 @@
             <h1>Sign Up for Visit Saudi</h1>
             <p style="text-align: center; color: #666; margin-bottom: 30px;">Join our community to access personalized content and tourism resources</p>
             
-            <form action="signin.html" method="get">
+            <form id="signup-form" action="signin.html" method="get">
                 <div class="form-group">
                     <label for="fullname">Full Name *</label>
                     <input type="text" id="fullname" name="fullname" required placeholder="Enter your full name">
                 </div>
 
                 <div class="form-group">
-                    <label for="dob">Date of Birth *</label>
+                    <label for="dob">Date of Birth * (You must be 18 years or older)</label>
                     <input type="date" id="dob" name="dob" required>
+                    <div id="dob-msg" class="validation-msg"></div>
                 </div>
 
                 <div class="form-group">
@@ -80,6 +81,7 @@
                         <option value="graduate">Graduate</option>
                         <option value="other">Other</option>
                     </select>
+                    <div id="semester-msg" class="validation-msg"></div>
                 </div>
 
                 <div class="form-group">
@@ -109,13 +111,28 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="password">Password *</label>
+                    <label for="password">Password * (Minimum 6 characters, must contain 1 number and 1 uppercase letter)</label>
                     <input type="password" id="password" name="password" required placeholder="Create a secure password">
+                    <div id="password-length-msg" class="validation-msg"></div>
+                    <div id="password-strength-msg" class="validation-msg"></div>
                 </div>
 
                 <div class="form-group">
                     <label for="confirm-password">Confirm Password *</label>
                     <input type="password" id="confirm-password" name="confirm-password" required placeholder="Re-enter your password">
+                    <div id="password-match-msg" class="validation-msg"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="captcha-input">Enter CAPTCHA *</label>
+                    <div class="captcha-container">
+                        <span id="captcha-display"></span>
+                        <button type="button" id="refresh-captcha" title="Refresh CAPTCHA">
+                            <i class="fas fa-sync-alt"></i>
+                        </button>
+                    </div>
+                    <input type="text" id="captcha-input" name="captcha" required placeholder="Enter the CAPTCHA code" style="margin-top: 10px;">
+                    <div id="captcha-msg" class="validation-msg"></div>
                 </div>
 
                 <div class="form-group" style="margin-bottom: 30px;">
@@ -189,5 +206,7 @@
         </div>
     </footer>
     
+    <!-- JavaScript for form validation -->
+    <script src="js/signup.js"></script>
 </body>
 </html>

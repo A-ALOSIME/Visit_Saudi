@@ -12,7 +12,7 @@
     <!--added imam logo as favicon-->
     <link rel="icon" type="image/png" href="assets/imam.png"> 
 
-
+   
 </head>
 <body>
     <!-- Header  and Top Navigation -->
@@ -49,15 +49,17 @@
             <h1>Sign In to Visit Saudi</h1>
             <p style="text-align: center; color: #666; margin-bottom: 30px;">Access your account and participate in our tourism survey</p>
             
-            <form action="Survey.html" method="get">
+            <form id="signin-form" action="Survey.html" method="get">
                 <div class="form-group">
                     <label for="username">Username *</label>
                     <input type="text" id="username" name="username" required placeholder="Enter your username">
+                    <div id="username-msg" class="validation-msg"></div>
                 </div>
 
                 <div class="form-group">
                     <label for="password">Password *</label>
                     <input type="password" id="password" name="password" required placeholder="Enter your password">
+                    <div id="password-msg" class="validation-msg"></div>
                 </div>
 
                 <div class="form-group" style="margin-bottom: 30px;">
@@ -115,5 +117,7 @@
         </div>
     </footer>
     
+    <!-- JavaScript for form validation -->
+    <script src="js/signin.js"></script>
 </body>
 </html>
